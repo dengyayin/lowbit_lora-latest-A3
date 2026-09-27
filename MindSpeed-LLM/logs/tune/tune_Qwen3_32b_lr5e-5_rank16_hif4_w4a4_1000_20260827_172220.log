@@ -1,0 +1,32 @@
+can not use command: npu-smi info
+Traceback (most recent call last):
+  File "/usr/local/python3.10.7/lib/python3.10/site-packages/torch/__init__.py", line 2763, in _import_device_backends
+    entrypoint = backend_extension.load()
+  File "/usr/local/python3.10.7/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+    module = import_module(match.group('module'))
+  File "/usr/local/python3.10.7/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/python3.10.7/lib/python3.10/site-packages/torch_npu/__init__.py", line 41, in <module>
+    import torch_npu.npu
+  File "/usr/local/python3.10.7/lib/python3.10/site-packages/torch_npu/npu/__init__.py", line 150, in <module>
+    from torch_npu.utils import _should_print_warning
+  File "/usr/local/python3.10.7/lib/python3.10/site-packages/torch_npu/utils/__init__.py", line 4, in <module>
+    from torch_npu import _C
+ImportError: /usr/local/python3.10.7/lib/python3.10/site-packages/torch_npu/lib/libnpu_profiler.so: undefined symbol: _ZNK3c1010TensorImpl15decref_pyobjectEv
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/python3.10.7/bin/torchrun", line 3, in <module>
+    from torch.distributed.run import main
+  File "/usr/local/python3.10.7/lib/python3.10/site-packages/torch/__init__.py", line 2808, in <module>
+    _import_device_backends()
+  File "/usr/local/python3.10.7/lib/python3.10/site-packages/torch/__init__.py", line 2767, in _import_device_backends
+    raise RuntimeError(
+RuntimeError: Failed to load the backend extension: torch_npu. You can disable extension auto-loading with TORCH_DEVICE_BACKEND_AUTOLOAD=0.

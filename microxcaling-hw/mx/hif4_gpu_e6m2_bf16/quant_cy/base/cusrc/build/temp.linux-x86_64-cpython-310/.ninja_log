@@ -1,0 +1,5 @@
+# ninja log v7
+3	15655	1763035551987519349	/home/amax/ENTER/envs/flatquant/lib/python3.10/site-packages/mx/hif4_gpu_e6m2_bf16/quant_cy/base/cusrc/build/temp.linux-x86_64-cpython-310/hifxg_quant.o	ebe803de9cbf84f4
+3	43479	1763035551987519349	/home/amax/ENTER/envs/flatquant/lib/python3.10/site-packages/mx/hif4_gpu_e6m2_bf16/quant_cy/base/cusrc/build/temp.linux-x86_64-cpython-310/hifxg_quant_cuda.o	5af5180611b21efa
+6	15789	1763035595839517273	/home/amax/ENTER/envs/flatquant/lib/python3.10/site-packages/mx/hif4_gpu_e6m2_bf16/quant_cy/base/cusrc/build/temp.linux-x86_64-cpython-310/lowbit_quant.o	430a153eca84e519
+6	40783	1763035595839517273	/home/amax/ENTER/envs/flatquant/lib/python3.10/site-packages/mx/hif4_gpu_e6m2_bf16/quant_cy/base/cusrc/build/temp.linux-x86_64-cpython-310/lowbit_quant_cuda.o	4220947a2a593fb0

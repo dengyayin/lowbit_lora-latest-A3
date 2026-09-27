@@ -1,0 +1,14 @@
+# Most recent tested torch version, older versions
+# will probably work.
+#torch==2.2.0
+#torchvision==0.16
+#torchaudio==2.1.0
+
+pytest
+packaging           # for unit test version checking
+ninja               # for building custom extensions
+## MindSpeed-LLM 依赖
+#apex==0.9.10.dev0
+#pyramid==1.5
+#zope.interface==4.7.2
+

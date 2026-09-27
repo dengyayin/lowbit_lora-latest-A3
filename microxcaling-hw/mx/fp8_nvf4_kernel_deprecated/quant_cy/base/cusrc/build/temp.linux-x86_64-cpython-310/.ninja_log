@@ -1,0 +1,5 @@
+# ninja log v5
+1	18761	1745452973014485406	/root/miniconda3/envs/awq/lib/python3.10/site-packages/mx/fp8_nvf4_kernel/quant_cy/base/cusrc/build/temp.linux-x86_64-cpython-310/hifxg_quant.o	acc1792e2b013adf
+1	53370	1745453007598484193	/root/miniconda3/envs/awq/lib/python3.10/site-packages/mx/fp8_nvf4_kernel/quant_cy/base/cusrc/build/temp.linux-x86_64-cpython-310/hifxg_quant_cuda.o	fdbb0b577057d9b9
+4	18453	1745453026514483529	/root/miniconda3/envs/awq/lib/python3.10/site-packages/mx/fp8_nvf4_kernel/quant_cy/base/cusrc/build/temp.linux-x86_64-cpython-310/lowbit_quant.o	a4086f0d78a24bd
+4	52701	1745453060746482328	/root/miniconda3/envs/awq/lib/python3.10/site-packages/mx/fp8_nvf4_kernel/quant_cy/base/cusrc/build/temp.linux-x86_64-cpython-310/lowbit_quant_cuda.o	1bfa09081358c20c

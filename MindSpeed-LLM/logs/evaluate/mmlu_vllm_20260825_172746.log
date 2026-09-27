@@ -1,0 +1,54 @@
+INFO 08-25 17:27:51 [__init__.py:36] Available plugins for group vllm.platform_plugins:
+INFO 08-25 17:27:51 [__init__.py:38] - ascend -> vllm_ascend:register
+INFO 08-25 17:27:51 [__init__.py:41] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 08-25 17:27:51 [__init__.py:207] Platform plugin ascend is activated
+/usr/local/python3.11.13/lib/python3.11/site-packages/torch_npu/dynamo/torchair/__init__.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+WARNING 08-25 17:27:55 [_custom_ops.py:20] Failed to import from vllm._C with ModuleNotFoundError("No module named 'vllm._C'")
+2026-08-25 17:27:55,538 - 76339 - ServiceProfiler - INFO - VLLM_USE_V1 not set, auto-detected via vLLM 0.11.0+empty: default 1
+WARNING 08-25 17:27:55 [registry.py:582] Model architecture Qwen2VLForConditionalGeneration is already registered, and will be overwritten by the new model class vllm_ascend.models.qwen2_vl:AscendQwen2VLForConditionalGeneration.
+WARNING 08-25 17:27:55 [registry.py:582] Model architecture Qwen3VLMoeForConditionalGeneration is already registered, and will be overwritten by the new model class vllm_ascend.models.qwen2_5_vl_without_padding:AscendQwen3VLMoeForConditionalGeneration.
+WARNING 08-25 17:27:55 [registry.py:582] Model architecture Qwen3VLForConditionalGeneration is already registered, and will be overwritten by the new model class vllm_ascend.models.qwen2_5_vl_without_padding:AscendQwen3VLForConditionalGeneration.
+WARNING 08-25 17:27:55 [registry.py:582] Model architecture Qwen2_5_VLForConditionalGeneration is already registered, and will be overwritten by the new model class vllm_ascend.models.qwen2_5_vl:AscendQwen2_5_VLForConditionalGeneration.
+WARNING 08-25 17:27:55 [registry.py:582] Model architecture Qwen2_5OmniModel is already registered, and will be overwritten by the new model class vllm_ascend.models.qwen2_5_omni_thinker:AscendQwen2_5OmniThinkerForConditionalGeneration.
+WARNING 08-25 17:27:55 [registry.py:582] Model architecture DeepseekV32ForCausalLM is already registered, and will be overwritten by the new model class vllm_ascend.models.deepseek_v3_2:CustomDeepseekV3ForCausalLM.
+WARNING 08-25 17:27:55 [registry.py:582] Model architecture Qwen3NextForCausalLM is already registered, and will be overwritten by the new model class vllm_ascend.models.qwen3_next:CustomQwen3NextForCausalLM.
+INFO 08-25 17:27:55 [utils.py:233] non-default args: {'trust_remote_code': True, 'dtype': 'bfloat16', 'seed': 42, 'max_model_len': 4096, 'tensor_parallel_size': 4, 'max_num_seqs': 200, 'disable_log_stats': True, 'max_lora_rank': None, 'model': '/data/d30082694/ckpt/qwen3-32b/Qwen3_32b_lr5e-5_rank16_hif4_w4a4_1000_hf_merged'}
+[transformers] The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+INFO 08-25 17:27:55 [model.py:547] Resolved architecture: Qwen3ForCausalLM
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+INFO 08-25 17:27:55 [model.py:1510] Using max model len 4096
+INFO 08-25 17:27:55 [scheduler.py:205] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 08-25 17:27:55 [platform.py:208] PIECEWISE compilation enabled on NPU. use_inductor not supported - using only ACL Graph mode
+INFO 08-25 17:27:55 [utils.py:393] Calculated maximum supported batch sizes for ACL graph: 9
+WARNING 08-25 17:27:55 [utils.py:396] Currently, communication is performed using FFTS+ method, which reduces the number of available streams and, as a result, limits the range of runtime shapes that can be handled. To both improve communication performance and increase the number of supported shapes, set HCCL_OP_EXPANSION_MODE=AIV.
+INFO 08-25 17:27:55 [utils.py:415] Adjusted ACL graph batch sizes for Qwen3ForCausalLM model (layers: 64): 53 → 9 sizes
+WARNING 08-25 17:27:55 [platform.py:270] If chunked prefill or prefix caching is enabled, block size must be set to 128.
+Traceback (most recent call last):
+  File "/data/l00814573/lowbit_lora-latest/DYY_EXE/dyy_vllm_mmlu.py", line 133, in <module>
+    main()
+  File "/data/l00814573/lowbit_lora-latest/DYY_EXE/dyy_vllm_mmlu.py", line 71, in main
+    llm = LLM(model=args.model,
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/vllm/vllm/entrypoints/llm.py", line 297, in __init__
+    self.llm_engine = LLMEngine.from_engine_args(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vllm/vllm/v1/engine/llm_engine.py", line 177, in from_engine_args
+    return cls(vllm_config=vllm_config,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vllm/vllm/v1/engine/llm_engine.py", line 96, in __init__
+    self.tokenizer = init_tokenizer_from_configs(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vllm/vllm/transformers_utils/tokenizer.py", line 286, in init_tokenizer_from_configs
+    return get_tokenizer(
+           ^^^^^^^^^^^^^^
+  File "/vllm/vllm/transformers_utils/tokenizer.py", line 256, in get_tokenizer
+    tokenizer = get_cached_tokenizer(tokenizer)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vllm/vllm/transformers_utils/tokenizer.py", line 99, in get_cached_tokenizer
+    tokenizer.all_special_tokens_extended)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python3.11.13/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 1308, in __getattr__
+    raise AttributeError(f"{self.__class__.__name__} has no attribute {key}")
+AttributeError: Qwen2Tokenizer has no attribute all_special_tokens_extended. Did you mean: 'num_special_tokens_to_add'?
+[ERROR] 2026-08-25-17:27:56 (PID:76339, Device:-1, RankID:-1) ERR99999 UNKNOWN applicaiton exception

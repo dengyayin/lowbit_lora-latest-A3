@@ -1,0 +1,184 @@
+can not use command: npu-smi info
+W0827 23:26:03.070000 1942 site-packages/torch/distributed/run.py:852] 
+W0827 23:26:03.070000 1942 site-packages/torch/distributed/run.py:852] *****************************************
+W0827 23:26:03.070000 1942 site-packages/torch/distributed/run.py:852] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0827 23:26:03.070000 1942 site-packages/torch/distributed/run.py:852] *****************************************
+can not use command: npu-smi info
+can not use command: npu-smi info
+can not use command: npu-smi info
+can not use command: npu-smi info
+/usr/local/python3.10.7/lib/python3.10/site-packages/torch_npu/contrib/transfer_to_npu.py:360: ImportWarning: 
+    *************************************************************************************************************
+    The torch.Tensor.cuda and torch.nn.Module.cuda are replaced with torch.Tensor.npu and torch.nn.Module.npu now..
+    The torch.cuda.DoubleTensor is replaced with torch.npu.FloatTensor cause the double type is not supported now..
+    The backend in torch.distributed.init_process_group set to hccl now..
+    The torch.cuda.* and torch.cuda.amp.* are replaced with torch.npu.* and torch.npu.amp.* now..
+    The device parameters have been replaced with npu in the function below:
+    torch.logspace, torch.randint, torch.hann_window, torch.rand, torch.full_like, torch.ones_like, torch.rand_like, torch.randperm, torch.arange, torch.frombuffer, torch.normal, torch._empty_per_channel_affine_quantized, torch.empty_strided, torch.empty_like, torch.scalar_tensor, torch.tril_indices, torch.bartlett_window, torch.ones, torch.sparse_coo_tensor, torch.randn, torch.kaiser_window, torch.tensor, torch.triu_indices, torch.as_tensor, torch.zeros, torch.randint_like, torch.full, torch.eye, torch._sparse_csr_tensor_unsafe, torch.empty, torch._sparse_coo_tensor_unsafe, torch.blackman_window, torch.zeros_like, torch.range, torch.sparse_csr_tensor, torch.randn_like, torch.from_file, torch._cudnn_init_dropout_state, torch._empty_affine_quantized, torch.linspace, torch.hamming_window, torch.empty_quantized, torch._pin_memory, torch.load, torch.set_default_device, torch.get_device_module, torch.sparse_compressed_tensor, torch.Tensor.new_empty, torch.Tensor.new_empty_strided, torch.Tensor.new_full, torch.Tensor.new_ones, torch.Tensor.new_tensor, torch.Tensor.new_zeros, torch.Tensor.to, torch.Tensor.pin_memory, torch.nn.Module.to, torch.nn.Module.to_empty
+    *************************************************************************************************************
+    
+  warnings.warn(msg, ImportWarning)
+/usr/local/python3.10.7/lib/python3.10/site-packages/torch_npu/contrib/transfer_to_npu.py:291: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/megatron/core/tensor_parallel/random.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+/usr/local/python3.10.7/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/usr/local/python3.10.7/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('zope')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+WARNING:root:Failed to import get_post_process_flag: cannot import name 'get_post_process_flag' from 'mindspeed.core.pipeline_parallel.dualpipev.dualpipev_schedules' (/data/l00814573/lowbit_lora-latest/MindSpeed/mindspeed/core/pipeline_parallel/dualpipev/dualpipev_schedules.py)
+/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/megatron/core/tensor_parallel/random.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/megatron/core/tensor_parallel/random.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/megatron/core/tensor_parallel/random.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+/usr/local/python3.10.7/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/usr/local/python3.10.7/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('zope')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/usr/local/python3.10.7/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/usr/local/python3.10.7/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/usr/local/python3.10.7/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('zope')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/usr/local/python3.10.7/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('zope')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+WARNING:root:Failed to import get_post_process_flag: cannot import name 'get_post_process_flag' from 'mindspeed.core.pipeline_parallel.dualpipev.dualpipev_schedules' (/data/l00814573/lowbit_lora-latest/MindSpeed/mindspeed/core/pipeline_parallel/dualpipev/dualpipev_schedules.py)
+WARNING:root:Failed to import get_post_process_flag: cannot import name 'get_post_process_flag' from 'mindspeed.core.pipeline_parallel.dualpipev.dualpipev_schedules' (/data/l00814573/lowbit_lora-latest/MindSpeed/mindspeed/core/pipeline_parallel/dualpipev/dualpipev_schedules.py)
+WARNING:root:Failed to import get_post_process_flag: cannot import name 'get_post_process_flag' from 'mindspeed.core.pipeline_parallel.dualpipev.dualpipev_schedules' (/data/l00814573/lowbit_lora-latest/MindSpeed/mindspeed/core/pipeline_parallel/dualpipev/dualpipev_schedules.py)
+[warning] failed import dualpipe modules, not support dualpipe
+INFO:torch_npu.env:get env WORLD_SIZE = 4
+using world size: 4, data-parallel size: 1, context-parallel size: 1 tensor-model-parallel size: 1, pipeline-model-parallel size: 4 
+WARNING: Setting args.overlap_p2p_comm to False since non-interleaved schedule does not support overlapping p2p communication
+accumulate and all-reduce gradients in fp32 for bfloat16 data type.
+using torch.bfloat16 for parameters ...
+Traceback (most recent call last):
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/posttrain_gpt.py", line 11, in <module>
+    launch()
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/posttrain_gpt.py", line 6, in launch
+    trainer = AutoTrainer()
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/mindspeed_llm/tasks/posttrain/launcher.py", line 56, in __init__
+    initialize_megatron()
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/mindspeed_llm/training/initialize.py", line 84, in initialize_megatron
+    validate_args(args, args_defaults)
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/mindspeed_llm/training/arguments.py", line 1610, in wrapper
+    megatron_validate_args(args, defaults)
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/megatron/training/arguments.py", line 482, in validate_args
+    raise RuntimeError(
+RuntimeError: Using async gradient all reduce requires setting the environment variable CUDA_DEVICE_MAX_CONNECTIONS to 1
+[ERROR] 2026-08-27-23:26:10 (PID:2022, Device:-1, RankID:-1) ERR99999 UNKNOWN applicaiton exception
+[warning] failed import dualpipe modules, not support dualpipe
+INFO:torch_npu.env:get env WORLD_SIZE = 4
+Traceback (most recent call last):
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/posttrain_gpt.py", line 11, in <module>
+    launch()
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/posttrain_gpt.py", line 6, in launch
+    trainer = AutoTrainer()
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/mindspeed_llm/tasks/posttrain/launcher.py", line 56, in __init__
+    initialize_megatron()
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/mindspeed_llm/training/initialize.py", line 84, in initialize_megatron
+    validate_args(args, args_defaults)
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/mindspeed_llm/training/arguments.py", line 1610, in wrapper
+    megatron_validate_args(args, defaults)
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/megatron/training/arguments.py", line 482, in validate_args
+    raise RuntimeError(
+RuntimeError: Using async gradient all reduce requires setting the environment variable CUDA_DEVICE_MAX_CONNECTIONS to 1
+[ERROR] 2026-08-27-23:26:10 (PID:2023, Device:-1, RankID:-1) ERR99999 UNKNOWN applicaiton exception
+[warning] failed import dualpipe modules, not support dualpipe
+[warning] failed import dualpipe modules, not support dualpipe
+INFO:torch_npu.env:get env WORLD_SIZE = 4
+Traceback (most recent call last):
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/posttrain_gpt.py", line 11, in <module>
+    launch()
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/posttrain_gpt.py", line 6, in launch
+    trainer = AutoTrainer()
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/mindspeed_llm/tasks/posttrain/launcher.py", line 56, in __init__
+    initialize_megatron()
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/mindspeed_llm/training/initialize.py", line 84, in initialize_megatron
+    validate_args(args, args_defaults)
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/mindspeed_llm/training/arguments.py", line 1610, in wrapper
+    megatron_validate_args(args, defaults)
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/megatron/training/arguments.py", line 482, in validate_args
+    raise RuntimeError(
+RuntimeError: Using async gradient all reduce requires setting the environment variable CUDA_DEVICE_MAX_CONNECTIONS to 1
+[ERROR] 2026-08-27-23:26:10 (PID:2025, Device:-1, RankID:-1) ERR99999 UNKNOWN applicaiton exception
+INFO:torch_npu.env:get env WORLD_SIZE = 4
+Traceback (most recent call last):
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/posttrain_gpt.py", line 11, in <module>
+    launch()
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/posttrain_gpt.py", line 6, in launch
+    trainer = AutoTrainer()
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/mindspeed_llm/tasks/posttrain/launcher.py", line 56, in __init__
+    initialize_megatron()
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/mindspeed_llm/training/initialize.py", line 84, in initialize_megatron
+    validate_args(args, args_defaults)
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/mindspeed_llm/training/arguments.py", line 1610, in wrapper
+    megatron_validate_args(args, defaults)
+  File "/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/megatron/training/arguments.py", line 482, in validate_args
+    raise RuntimeError(
+RuntimeError: Using async gradient all reduce requires setting the environment variable CUDA_DEVICE_MAX_CONNECTIONS to 1
+[ERROR] 2026-08-27-23:26:10 (PID:2024, Device:-1, RankID:-1) ERR99999 UNKNOWN applicaiton exception
+W0827 23:26:11.910000 1942 site-packages/torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 2023 closing signal SIGTERM
+W0827 23:26:11.911000 1942 site-packages/torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 2024 closing signal SIGTERM
+W0827 23:26:11.911000 1942 site-packages/torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 2025 closing signal SIGTERM
+E0827 23:26:13.261000 1942 site-packages/torch/distributed/elastic/multiprocessing/api.py:984] failed (exitcode: 1) local_rank: 0 (pid: 2022) of binary: /usr/local/python3.10.7/bin/python3.10
+Traceback (most recent call last):
+  File "/usr/local/python3.10.7/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/usr/local/python3.10.7/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/python3.10.7/lib/python3.10/site-packages/torch/distributed/run.py", line 991, in main
+    run(args)
+  File "/usr/local/python3.10.7/lib/python3.10/site-packages/torch/distributed/run.py", line 982, in run
+    elastic_launch(
+  File "/usr/local/python3.10.7/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/python3.10.7/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/l00814573/lowbit_lora-latest/MindSpeed-LLM/posttrain_gpt.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-08-27_23:26:13
+  host      : localhost.localdomain
+  rank      : 1 (local_rank: 1)
+  exitcode  : -15 (pid: 2023)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 2023
+[2]:
+  time      : 2026-08-27_23:26:13
+  host      : localhost.localdomain
+  rank      : 2 (local_rank: 2)
+  exitcode  : -15 (pid: 2024)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 2024
+[3]:
+  time      : 2026-08-27_23:26:13
+  host      : localhost.localdomain
+  rank      : 3 (local_rank: 3)
+  exitcode  : -15 (pid: 2025)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 2025
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-08-27_23:26:11
+  host      : localhost.localdomain
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2022)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[ERROR] 2026-08-27-23:26:13 (PID:1942, Device:-1, RankID:-1) ERR99999 UNKNOWN applicaiton exception
